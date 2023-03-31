@@ -37,6 +37,21 @@ if(matched){
 }
 }
 
+function register(newusername, newpassword, newname, newemail){
+
+    dbUsers.push({
+        username : newusername,
+        password : newpassword,
+        name : newname,
+        email : newemail,
+    })
+
+}
+
 //try to login
-console.log(login("hafiz", "apihhafiz"))
-console.log(login("mir, mirulll"))
+//console.log(login("hafiz", "apihhafiz"))
+console.log(login("mir", "mirulll"))
+
+//register
+register("apizzz", "080091", "haaa" ,"apizz@gmail.com")
+console.log(login ("apizzz", "080091"))
